@@ -1,18 +1,19 @@
 // src/NavBar.js
 import React from 'react';
+import "/src/App.css";
 
 const NavBar = ({ scrollToSection }) => {
   return (
-    <nav>
-      <button onClick={() => scrollToSection('whoWeAre')}>Who We Are</button>
-      <button onClick={() => scrollToSection('locations')}>Locations</button>
-      <button onClick={() => scrollToSection('customers')}>Customers</button>
-      <button onClick={() => scrollToSection('media')}>Media</button>
-      <button onClick={() => scrollToSection('careers')}>Careers</button>
-      <button onClick={() => scrollToSection('awcCares')}>AWC Cares</button>
-      <button onClick={() => scrollToSection('laborNegotiations')}>Labor Negotiations</button>
-      <button onClick={() => scrollToSection('seherRecognition')}>Seher Recognition</button>
-    </nav>
+    <div className='nav-bar'>
+      <button onClick={() => scrollToSection('whoWeAre')} className='button'>Who We Are</button>
+      <button onClick={() => scrollToSection('locations')} className='button'>Locations</button>
+      <button onClick={() => scrollToSection('customers')} className='button'>Customers</button>
+      <button onClick={() => scrollToSection('media')} className='button'>Media</button>
+      <button onClick={() => scrollToSection('careers')} className='button'>Careers</button>
+      <button onClick={() => scrollToSection('awcCares')} className='button'>AWC Cares</button>
+      <button onClick={() => scrollToSection('laborNegotiations')} className='button'>Labor Negotiations</button>
+      <button onClick={() => scrollToSection('seherRecognition')} className='button'>Seher Recognition</button>
+    </div>
   );
 };
 
