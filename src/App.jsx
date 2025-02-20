@@ -1,7 +1,9 @@
-// src/App.js
 import React, { useRef } from 'react';
 import NavBar from './components/NavBar';
 import './App.css';
+import location from "./assets/imgs/chicago-ford.png";
+import vehicle_customers from "./assets/imgs/vehicle-customers.png";
+import railroad_customers from "./assets/imgs/railroad-customers.png";
 
 function App() {
   const sections = {
@@ -23,6 +25,7 @@ function App() {
       <div className="main">
         <NavBar scrollToSection={scrollToSection} />
 
+        {/* WHO WE ARE */}
         <div className="who-we-are"> 
           <h2>Auto Warehousing Company</h2>
 
@@ -79,6 +82,7 @@ function App() {
           </div>
         </div>
 
+        {/* LOCATIONS */}
         <div ref={sections.locations} style ={{backgroundColor: 'aliceblue'}}>
           <h2>Locations</h2>
 
@@ -86,30 +90,344 @@ function App() {
             <div className="column">
               <h1>West</h1>
               <div className='map'>
-                <iframe src="https://www.google.com/maps/d/embed?mid=1KdXFFhfPwYM70X0XySQPM6C6jWU&ehbc=2E312F" width="450" height="400"></iframe>
+                <iframe src="https://www.google.com/maps/d/embed?mid=1KdXFFhfPwYM70X0XySQPM6C6jWU&ehbc=2E312F" width="700" height="400"></iframe>
               </div>
             </div>
 
             <div className="column">
               <h1>Mid-West / Canada</h1>
               <div className='map'>
-                <iframe src="https://www.google.com/maps/d/embed?mid=1KdXFFhfPwYM70X0XySQPM6C6jWU&ehbc=2E312F" width="450" height="400"></iframe>
+                <iframe src="https://www.google.com/maps/d/embed?mid=1KdXFFhfPwYM70X0XySQPM6C6jWU&ehbc=2E312F" width="700" height="400"></iframe>
               </div>
             </div>
 
             <div className="column">
               <h1>East</h1>
               <div className='map'>
-                <iframe src="https://www.google.com/maps/d/embed?mid=1KdXFFhfPwYM70X0XySQPM6C6jWU&ehbc=2E312F" width="450" height="400"></iframe>
+                <iframe src="https://www.google.com/maps/d/embed?mid=1KdXFFhfPwYM70X0XySQPM6C6jWU&ehbc=2E312F" width="700" height="400"></iframe>
               </div>
             </div>
           </div>
+          
+          <div className="flex">
+            <div className="img-area">
+              <img src={location} className='img'></img>
+              
+              <h3>
+                Alliston, ON
+              </h3>
+              <div className='p-locations'>
+                4700 Industrial Parkway
+                Allston, ON L9R 1W7
+              </div>
+              
+            </div>
+            <div className="img-area">
+              <img src={location} className='img'></img>
+              
+              <h3>
+                Baltimore - BTC
+              </h3>
+              <div className='p-locations'>
+                1301 Chesapeake Ave
+                Baltimore, MD 21226
+              </div>
+              
+            </div>
+            <div className="img-area">
+              <img src={location} className='img'></img>
+              
+              <h3>
+                Baltimore - Fairfield
+              </h3>
+              <div className='p-locations'>
+                2900 Childs Street
+                Baltimore, MD 21226
+              </div>
+              
+            </div>
+            <div className="img-area">
+              <img src={location} className='img'></img>
+              
+              <h3>
+                Chicago - NS
+              </h3>
+              <div className='p-locations'>
+                13227 South Torrence Ave
+                Chicago, IL 60633
+              </div>
+              
+            </div>
+          </div>
 
+          <div className="flex">
+            <div className="img-area">
+              <img src={location} className='img'></img>
+              
+              <h3>
+                Alliston, ON
+              </h3>
+              <div className='p-locations'>
+                4700 Industrial Parkway
+                Allston, ON L9R 1W7
+              </div>
+              
+            </div>
+            <div className="img-area">
+              <img src={location} className='img'></img>
+              
+              <h3>
+                Baltimore - BTC
+              </h3>
+              <div className='p-locations'>
+                1301 Chesapeake Ave
+                Baltimore, MD 21226
+              </div>
+              
+            </div>
+            <div className="img-area">
+              <img src={location} className='img'></img>
+              
+              <h3>
+                Baltimore - Fairfield
+              </h3>
+              <div className='p-locations'>
+                2900 Childs Street
+                Baltimore, MD 21226
+              </div>
+              
+            </div>
+            <div className="img-area">
+              <img src={location} className='img'></img>
+              
+              <h3>
+                Chicago - NS
+              </h3>
+              <div className='p-locations'>
+                13227 South Torrence Ave
+                Chicago, IL 60633
+              </div>
+              
+            </div>
+          </div>
+          
+          <div className="flex">
+            <div className="img-area">
+              <img src={location} className='img'></img>
+              
+              <h3>
+                Alliston, ON
+              </h3>
+              <div className='p-locations'>
+                4700 Industrial Parkway
+                Allston, ON L9R 1W7
+              </div>
+              
+            </div>
+            <div className="img-area">
+              <img src={location} className='img'></img>
+              
+              <h3>
+                Baltimore - BTC
+              </h3>
+              <div className='p-locations'>
+                1301 Chesapeake Ave
+                Baltimore, MD 21226
+              </div>
+              
+            </div>
+            <div className="img-area">
+              <img src={location} className='img'></img>
+              
+              <h3>
+                Baltimore - Fairfield
+              </h3>
+              <div className='p-locations'>
+                2900 Childs Street
+                Baltimore, MD 21226
+              </div>
+              
+            </div>
+            <div className="img-area">
+              <img src={location} className='img'></img>
+              
+              <h3>
+                Chicago - NS
+              </h3>
+              <div className='p-locations'>
+                13227 South Torrence Ave
+                Chicago, IL 60633
+              </div>
+              
+            </div>
+          </div>
+
+          <div className="flex">
+            <div className="img-area">
+              <img src={location} className='img'></img>
+              
+              <h3>
+                Alliston, ON
+              </h3>
+              <div className='p-locations'>
+                4700 Industrial Parkway
+                Allston, ON L9R 1W7
+              </div>
+              
+            </div>
+            <div className="img-area">
+              <img src={location} className='img'></img>
+              
+              <h3>
+                Baltimore - BTC
+              </h3>
+              <div className='p-locations'>
+                1301 Chesapeake Ave
+                Baltimore, MD 21226
+              </div>
+              
+            </div>
+            <div className="img-area">
+              <img src={location} className='img'></img>
+              
+              <h3>
+                Baltimore - Fairfield
+              </h3>
+              <div className='p-locations'>
+                2900 Childs Street
+                Baltimore, MD 21226
+              </div>
+              
+            </div>
+            <div className="img-area">
+              <img src={location} className='img'></img>
+              
+              <h3>
+                Chicago - NS
+              </h3>
+              <div className='p-locations'>
+                13227 South Torrence Ave
+                Chicago, IL 60633
+              </div>
+              
+            </div>
+          </div>
+
+          <div className="flex">
+            <div className="img-area">
+              <img src={location} className='img'></img>
+              
+              <h3>
+                Alliston, ON
+              </h3>
+              <div className='p-locations'>
+                4700 Industrial Parkway
+                Allston, ON L9R 1W7
+              </div>
+              
+            </div>
+            <div className="img-area">
+              <img src={location} className='img'></img>
+              
+              <h3>
+                Baltimore - BTC
+              </h3>
+              <div className='p-locations'>
+                1301 Chesapeake Ave
+                Baltimore, MD 21226
+              </div>
+              
+            </div>
+            <div className="img-area">
+              <img src={location} className='img'></img>
+              
+              <h3>
+                Baltimore - Fairfield
+              </h3>
+              <div className='p-locations'>
+                2900 Childs Street
+                Baltimore, MD 21226
+              </div>
+              
+            </div>
+            <div className="img-area">
+              <img src={location} className='img'></img>
+              
+              <h3>
+                Chicago - NS
+              </h3>
+              <div className='p-locations'>
+                13227 South Torrence Ave
+                Chicago, IL 60633
+              </div>
+              
+            </div>
+          </div>
+
+          <div className="flex">
+            <div className="img-area">
+              <img src={location} className='img'></img>
+              
+              <h3>
+                Alliston, ON
+              </h3>
+              <div className='p-locations'>
+                4700 Industrial Parkway
+                Allston, ON L9R 1W7
+              </div>
+              
+            </div>
+            <div className="img-area">
+              <img src={location} className='img'></img>
+              
+              <h3>
+                Baltimore - BTC
+              </h3>
+              <div className='p-locations'>
+                1301 Chesapeake Ave
+                Baltimore, MD 21226
+              </div>
+              
+            </div>
+            <div className="img-area">
+              <img src={location} className='img'></img>
+              
+              <h3>
+                Baltimore - Fairfield
+              </h3>
+              <div className='p-locations'>
+                2900 Childs Street
+                Baltimore, MD 21226
+              </div>
+              
+            </div>
+            <div className="img-area">
+              <img src={location} className='img'></img>
+              
+              <h3>
+                Chicago - NS
+              </h3>
+              <div className='p-locations'>
+                13227 South Torrence Ave
+                Chicago, IL 60633
+              </div>
+              
+            </div>
+          </div>
         </div>
 
         <div ref={sections.customers} className='main'>
-          <h2>Customers</h2>
-          <p>Details about Customers.</p>
+          <h2>Our Customers</h2>
+          
+          <div className="flex">
+            <div className="img-area-customers">
+              <img src={vehicle_customers} className='img-customers'></img>
+            </div>
+
+            <div className="img-area-customers">
+              <img src={railroad_customers} className='img-customers'></img>
+            </div>
+          </div>
         </div>
 
         <div ref={sections.media}>

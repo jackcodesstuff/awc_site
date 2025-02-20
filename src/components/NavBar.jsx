@@ -1,10 +1,12 @@
 // src/NavBar.js
 import React from 'react';
 import "/src/App.css";
+import awc_logo from "/src/assets/imgs/awc_logo.png";
 
 const NavBar = ({ scrollToSection }) => {
   return (
     <div className='nav-bar'>
+      <img src={awc_logo} className='img-logo'></img>
       <button onClick={() => scrollToSection('whoWeAre')} className='button'>Who We Are</button>
       <button onClick={() => scrollToSection('locations')} className='button'>Locations</button>
       <button onClick={() => scrollToSection('customers')} className='button'>Customers</button>
