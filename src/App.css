@@ -106,9 +106,9 @@ img {
     background-color: white;
     border: 1px transparent;
     border-radius: 10px;
-    padding: 1%;
+    padding: 2%;
     margin: 1%;
-    width: 30%;
+    width: 65%;
 }
 
 .who-we-are {
@@ -120,6 +120,58 @@ img {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 100px;
+    padding: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: 1%;
+    width: 4%;
+}
+
+.side-bar-item {
+    text-align: center;
+    font-size: large;
+    margin-bottom: 60%;
+    border: 1px solid black;
+    padding: 5px;
+    position: relative;
+}
+
+.side-bar-item:hover {
+    background-color: aliceblue;
+}
+
+.side-bar-item:last-child {
+    margin-bottom: 0;
+}
+
+.side-bar-item .tooltip {
+    visibility: hidden;
+    position: absolute;
+    top: 700%;
+    left: 100%;
+    transform: translate(10px, -50%);
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 6px;
+    margin-left: 20px;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.side-bar-item:hover .tooltip {
+    visibility: visible;
+    width: 1700px;
+    opacity: 1;
 }
 
 .column {

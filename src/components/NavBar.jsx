@@ -1,7 +1,6 @@
 // src/NavBar.js
 import React from 'react';
 import "/src/App.css";
-import awc_logo from "/src/assets/imgs/awc_logo.png";
 
 const NavBar = ({ scrollToSection }) => {
   return (
